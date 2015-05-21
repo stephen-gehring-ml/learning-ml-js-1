@@ -22,6 +22,7 @@ xdmp.documentInsert("/simple.json", obj);
 
 // BASIC ML INSERT COMMAND W/ PERMISSIONS
 declareUpdate();
+var col = "my-phrases"; // NameSpace
 var perms = [xdmp.permission("qconsole-user", "read"), xdmp.permission("qconsole-user", "update")];
 xdmp.documentInsert("/fox.json", fox, perms, col);
 
